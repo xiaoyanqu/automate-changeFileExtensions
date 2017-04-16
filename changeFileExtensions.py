@@ -6,10 +6,12 @@ import string
 import shutil
 
 # Here you can specify the file path
-path = "C:\Users\Xiaoyan\Desktop\image"
+path = "C:\Users\Xiaoyan\Google Drive\Images"
 
 i = 0
 for filename in os.listdir(path):
+	if len(filename.split('.')) == 2:
+		continue
 	i += 1
 	# Here you will get a bunch of strings, i.e. type(filename) = <type 'str'>
 	# Then you can customize what you want to do by changing the following code
